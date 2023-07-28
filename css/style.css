@@ -1,0 +1,166 @@
+:root {
+  --primary-brand: #4d5ae5; /* Iris */
+  --pressed-state: #404bbf; /* OCEAN */
+  --dark: #2e2f42; /* Navyblue */
+  --success: #31d0aa; /* GREEN */
+  --text: #434455; /* SLATE */
+  --subtle-text: #8e8f99; /* LIGHT SLATE */
+  --acent: #e7e9fc; /* cornflower */
+  --light: #f4f4fd; /* CLOUD */
+  --modal-overlay: #2e2f42; /* NAVY BLUE modal */
+  --hero-background: #2e2f42; /* GREY */
+  --white-background: #ffffff; /* WHITE */
+  --modal-background: #fcfcfc; /* Dairy */
+  --primary-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--text);
+  background-color: var(--white-background);
+}
+.body-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+.h-one-text {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+}
+.h-two-text {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+.h-three-text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+.button-text {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  color: var(--primary-brand);
+}
+.logo-light {
+  color: var(--light);
+}
+.logo-dark {
+  color: var(--dark);
+}
+
+.header {
+  background-color: var(--white-background);
+}
+.nav-list-content {
+  color: var(--dark);
+  font-weight: 500;
+}
+.nav-list-content:hover,
+.nav-list-content:focus {
+  color: var(--pressed-state);
+}
+.header-address {
+  font-style: normal;
+}
+.address-list-content {
+  font-weight: 400;
+  color: var(--text);
+}
+.address-list-content:hover,
+.address-list-content:focus {
+  color: var(--pressed-state);
+}
+
+.footer {
+  font-weight: 500;
+  background-color: var(--dark);
+}
+.footer-text {
+  font-weight: 400;
+  color: var(--light);
+}
+
+/* ==============================./index.html============================== */
+.herro {
+  background-color: var(--hero-background);
+}
+.herro-title {
+  color: var(--white-background);
+  text-align: center;
+}
+.herro-button {
+  background-color: var(--primary-brand);
+  color: var(--white-background);
+  cursor: pointer;
+}
+.herro-button:hover,
+.herro-button:focus {
+  background-color: var(--pressed-state);
+}
+
+.benefits-list-title {
+  color: var(--dark);
+}
+
+.product-section-title {
+  color: var(--dark);
+  text-align: center;
+}
+
+.team-secrion {
+  background-color: var(--light);
+}
+.team-title {
+  text-align: center;
+  color: var(--dark);
+}
+.team-list-item {
+  background-color: var(--white-background);
+}
+.team-list-title {
+  color: var(--dark);
+}
+/* ==============================./portfolio.html============================== */
+.product-nav-button {
+  background-color: var(--light);
+  color: var(--primary-brand);
+  cursor: pointer;
+}
+.product-nav-button:hover,
+.product-nav-button:focus {
+  background-color: var(--pressed-state);
+  color: var(--white-background);
+}
+
+.product-list-title {
+  color: var(--dark);
+}
+.product-list-text {
+  color: var(--text);
+}
