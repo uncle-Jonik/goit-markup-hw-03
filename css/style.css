@@ -1,16 +1,15 @@
 :root {
-  --primary-brand: #4d5ae5; /* Iris */
-  --pressed-state: #404bbf; /* OCEAN */
-  --dark: #2e2f42; /* Navyblue */
-  --success: #31d0aa; /* GREEN */
-  --text: #434455; /* SLATE */
-  --subtle-text: #8e8f99; /* LIGHT SLATE */
-  --acent: #e7e9fc; /* cornflower */
-  --light: #f4f4fd; /* CLOUD */
-  --modal-overlay: #2e2f42; /* NAVY BLUE modal */
-  --hero-background: #2e2f42; /* GREY */
-  --white-background: #ffffff; /* WHITE */
-  --modal-background: #fcfcfc; /* Dairy */
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --white: #ffffff;
+  --dairy: #fcfcfc;
+
   --primary-font: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif;
 }
@@ -35,8 +34,8 @@
 }
 body {
   font-family: var(--primary-font);
-  color: var(--text);
-  background-color: var(--white-background);
+  color: var(--slate);
+  background-color: var(--white);
 }
 h1,
 h2,
@@ -104,49 +103,53 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  color: var(--primary-brand);
+  color: var(--iris);
   display: flex;
 }
 .logo-light {
-  color: var(--light);
+  color: var(--cloud);
 }
 .logo-dark {
-  color: var(--dark);
+  color: var(--navy-blue);
 }
 .footer {
   font-weight: 500;
-  background-color: var(--dark);
+  background-color: var(--navy-blue);
 }
 .footer-text {
   font-weight: 400;
-  color: var(--light);
+  color: var(--cloud);
+  width: 264px;
 }
 
 /* ==============================./index.html============================== */
 
-/* ==============================header============================== */
+/* ------------------------------header------------------------------ */
 .header {
-  background-color: var(--white-background);
+  background-color: var(--white);
+  border-bottom: 1px solid var(--cornflower);
   height: 72px;
+}
+.header-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 22px;
 }
 .header-nav {
   display: flex;
   gap: 76px;
-  align-self: center;
 }
 .header-nav-list {
   display: flex;
   gap: 40px;
 }
 .nav-list-content {
-  color: var(--dark);
+  color: var(--navy-blue);
   font-weight: 500;
 }
 .nav-list-content:hover,
 .nav-list-content:focus {
-  color: var(--pressed-state);
+  color: var(--ocean);
 }
 .header-address {
   font-style: normal;
@@ -159,68 +162,75 @@ ol {
 }
 .address-list-content {
   font-weight: 400;
-  color: var(--text);
+  color: var(--slate);
 }
 .address-list-content:hover,
 .address-list-content:focus {
-  color: var(--pressed-state);
+  color: var(--ocean);
 }
-/* ==============================herro============================== */
+/* ------------------------------herro------------------------------ */
 .herro {
-  background-color: var(--hero-background);
+  background-color: var(--navy-blue);
+}
+.herro-container {
 }
 .herro-title {
-  color: var(--white-background);
+  color: var(--white);
+  width: 496px;
   text-align: center;
 }
 .herro-button {
-  background-color: var(--primary-brand);
-  color: var(--white-background);
+  background-color: var(--iris);
+  color: var(--white);
   cursor: pointer;
+  padding: 16px 32px;
+
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .herro-button:hover,
 .herro-button:focus {
-  background-color: var(--pressed-state);
+  background-color: var(--ocean);
 }
-/* ==============================benefits============================== */
+/* ------------------------------benefits------------------------------ */
 .benefits-list-title {
-  color: var(--dark);
+  color: var(--navy-blue);
 }
-/* ==============================product-section============================== */
+/* ------------------------------product-section------------------------------ */
 .product-section-title {
-  color: var(--dark);
+  color: var(--navy-blue);
   text-align: center;
 }
-/* ==============================team-secrion============================== */
+/* ------------------------------team-secrion------------------------------ */
 .team-secrion {
-  background-color: var(--light);
+  background-color: var(--cloud);
 }
 .team-title {
   text-align: center;
-  color: var(--dark);
+  color: var(--navy-blue);
 }
 .team-list-item {
-  background-color: var(--white-background);
+  background-color: var(--white);
 }
 .team-list-title {
-  color: var(--dark);
+  color: var(--navy-blue);
 }
 
-/* ==============================./portfolio.html============================== */
+/* ==============================portfolio.html============================== */
 .product-nav-button {
   background-color: var(--light);
-  color: var(--primary-brand);
+  color: var(--iris);
   cursor: pointer;
 }
 .product-nav-button:hover,
 .product-nav-button:focus {
-  background-color: var(--pressed-state);
-  color: var(--white-background);
+  background-color: var(--ocean);
+  color: var(--white);
 }
 
 .product-list-title {
-  color: var(--dark);
+  color: var(--navy-blue);
 }
 .product-list-text {
-  color: var(--text);
+  color: var(--slate);
 }
