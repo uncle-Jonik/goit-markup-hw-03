@@ -15,11 +15,50 @@
   --logo-font: 'Raleway', sans-serif;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: var(--primary-font);
   color: var(--text);
   background-color: var(--white-background);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
 .body-text {
   font-size: 16px;
   line-height: 1.5;
@@ -51,11 +90,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.64px;
 }
-.list {
-  list-style: none;
-}
-.link {
-  text-decoration: none;
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .logo {
@@ -66,6 +105,7 @@ body {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   color: var(--primary-brand);
+  display: flex;
 }
 .logo-light {
   color: var(--light);
@@ -73,9 +113,32 @@ body {
 .logo-dark {
   color: var(--dark);
 }
+.footer {
+  font-weight: 500;
+  background-color: var(--dark);
+}
+.footer-text {
+  font-weight: 400;
+  color: var(--light);
+}
 
+/* ==============================./index.html============================== */
+
+/* ==============================header============================== */
 .header {
   background-color: var(--white-background);
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav {
+  display: flex;
+  gap: 76px;
+  align-self: center;
+}
+.header-nav-list {
+  display: flex;
+  gap: 40px;
 }
 .nav-list-content {
   color: var(--dark);
@@ -87,6 +150,12 @@ body {
 }
 .header-address {
   font-style: normal;
+  display: flex;
+  align-self: center;
+}
+.header-address-list {
+  display: flex;
+  gap: 40px;
 }
 .address-list-content {
   font-weight: 400;
@@ -96,17 +165,7 @@ body {
 .address-list-content:focus {
   color: var(--pressed-state);
 }
-
-.footer {
-  font-weight: 500;
-  background-color: var(--dark);
-}
-.footer-text {
-  font-weight: 400;
-  color: var(--light);
-}
-
-/* ==============================./index.html============================== */
+/* ==============================herro============================== */
 .herro {
   background-color: var(--hero-background);
 }
@@ -123,16 +182,16 @@ body {
 .herro-button:focus {
   background-color: var(--pressed-state);
 }
-
+/* ==============================benefits============================== */
 .benefits-list-title {
   color: var(--dark);
 }
-
+/* ==============================product-section============================== */
 .product-section-title {
   color: var(--dark);
   text-align: center;
 }
-
+/* ==============================team-secrion============================== */
 .team-secrion {
   background-color: var(--light);
 }
@@ -146,6 +205,7 @@ body {
 .team-list-title {
   color: var(--dark);
 }
+
 /* ==============================./portfolio.html============================== */
 .product-nav-button {
   background-color: var(--light);
