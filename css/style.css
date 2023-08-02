@@ -172,18 +172,20 @@ ol {
 .herro {
   background-color: var(--navy-blue);
 }
-.herro-container {
-}
 .herro-title {
   color: var(--white);
   width: 496px;
   text-align: center;
+  margin: 0 auto;
+  padding-top: 188px;
+  padding-bottom: 48px;
 }
 .herro-button {
   background-color: var(--iris);
   color: var(--white);
   cursor: pointer;
   padding: 16px 32px;
+  margin-bottom: 188px;
 
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -193,27 +195,86 @@ ol {
   background-color: var(--ocean);
 }
 /* ------------------------------benefits------------------------------ */
+.benefits-section {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.benefits-list {
+  display: flex;
+  gap: 24px;
+}
+.benefits-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 .benefits-list-title {
   color: var(--navy-blue);
 }
+.benefits-list-text {
+  width: 264px;
+}
 /* ------------------------------product-section------------------------------ */
+.product-section {
+  margin-bottom: 120px;
+}
 .product-section-title {
   color: var(--navy-blue);
   text-align: center;
+  margin-bottom: 72px;
+}
+.product-section-list {
+  display: flex;
+  gap: 24px;
 }
 /* ------------------------------team-secrion------------------------------ */
 .team-secrion {
   background-color: var(--cloud);
+  padding-bottom: 120px;
 }
 .team-title {
   text-align: center;
   color: var(--navy-blue);
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-list-item {
   background-color: var(--white);
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.title-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .team-list-title {
   color: var(--navy-blue);
+  text-align: center;
+}
+.team-list-text {
+  text-align: center;
+}
+/* ------------------------------footer------------------------------ */
+
+.footer-container {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* ==============================portfolio.html============================== */
