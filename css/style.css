@@ -270,7 +270,6 @@ ol {
 
 .footer-container {
   display: flex;
-  display: flex;
   flex-direction: column;
   gap: 18px;
   padding-top: 100px;
@@ -278,17 +277,54 @@ ol {
 }
 
 /* ==============================portfolio.html============================== */
+
+/* -------------------------------nav-section------------------------------- */
+.all-products-nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 96px;
+  gap: 24px;
+}
 .product-nav-button {
   background-color: var(--light);
   color: var(--iris);
   cursor: pointer;
+  padding: 12px 24px;
+
+  border-radius: 4px;
+  border: 1px solid var(--cornflower);
 }
 .product-nav-button:hover,
 .product-nav-button:focus {
   background-color: var(--ocean);
   color: var(--white);
 }
+/* ------------------------------example-section------------------------------ */
+.example-product-list {
+  padding-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  padding-bottom: 120px;
+}
+.product-list-item {
+  height: 420px;
+  border: 1px solid var(--cornflower);
+  background-color: var(--white);
+  margin-bottom: 24px;
+}
 
+.title-text-container-portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 16px 0 16px;
+}
+.product-list-link {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .product-list-title {
   color: var(--navy-blue);
 }
