@@ -212,12 +212,12 @@ img {
   display: flex;
   gap: 24px;
 }
-.benefits-list-item {
-  /* display: flex;
+/* .benefits-list-item {
+  display: flex;
   flex-direction: column;
   gap: 8px;  
-	спочатку робив так замість того щоб просто написати марджин */
-}
+	спочатку робив так замість того щоб просто написати марджин
+} */
 .benefits-list-title {
   color: var(--navy-blue);
   margin-bottom: 8px;
@@ -357,11 +357,11 @@ img {
   gap: 8px;
   padding: 0 16px 0 16px; */
 }
-.product-list-link {
-  /* display: flex;
+/* .product-list-link {
+  display: flex;
   flex-direction: column;
-  gap: 32px; */
-}
+  gap: 32px;
+} */
 .product-list-title {
   color: var(--navy-blue);
   margin-bottom: 8px;
