@@ -141,12 +141,14 @@ img {
 .header-nav {
   align-items: center;
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 }
 .header-nav-list {
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-list-content {
