@@ -137,6 +137,8 @@ img {
 .header-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-nav {
   align-items: center;
@@ -147,8 +149,8 @@ img {
 .header-nav-list {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 }
 
 .nav-list-content {
