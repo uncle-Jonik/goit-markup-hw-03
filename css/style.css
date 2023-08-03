@@ -139,7 +139,7 @@ img {
   justify-content: space-between;
 }
 .header-nav {
-  text-align: center;
+  align-items: center;
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -352,6 +352,7 @@ img {
   border: 1px solid var(--cornflower);
   background-color: var(--white);
   padding: 32px 16px;
+  border-top: none;
   /* display: flex;
   flex-direction: column;
   gap: 8px;
