@@ -96,7 +96,8 @@ img {
 .container {
   max-width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .logo {
@@ -107,7 +108,7 @@ img {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   color: var(--iris);
-  display: flex;
+  margin-right: 76px;
 }
 .logo-light {
   color: var(--cloud);
@@ -136,16 +137,18 @@ img {
 .header-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 22px;
 }
 .header-nav {
+  text-align: center;
   display: flex;
-  gap: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-nav-list {
   display: flex;
   gap: 40px;
 }
+
 .nav-list-content {
   color: var(--navy-blue);
   font-weight: 500;
@@ -174,24 +177,27 @@ img {
 /* ------------------------------herro------------------------------ */
 .herro {
   background-color: var(--navy-blue);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .herro-title {
   color: var(--white);
-  width: 496px;
+  max-width: 496px;
   text-align: center;
   margin: 0 auto;
-  padding-top: 188px;
   padding-bottom: 48px;
 }
 .herro-button {
+  display: block;
   background-color: var(--iris);
   color: var(--white);
   cursor: pointer;
   padding: 16px 32px;
-  margin-bottom: 188px;
-
+  min-width: 169px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  margin: 0 auto;
 }
 .herro-button:hover,
 .herro-button:focus {
@@ -199,27 +205,29 @@ img {
 }
 /* ------------------------------benefits------------------------------ */
 .benefits-section {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .benefits-list {
   display: flex;
   gap: 24px;
 }
-.benefits-list li {
-  display: flex;
+.benefits-list-item {
+  /* display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 8px;  
+	спочатку робив так замість того щоб просто написати марджин */
 }
 .benefits-list-title {
   color: var(--navy-blue);
+  margin-bottom: 8px;
 }
 .benefits-list-text {
   width: 264px;
 }
 /* ------------------------------product-section------------------------------ */
 .product-section {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 .product-section-title {
   color: var(--navy-blue);
@@ -231,15 +239,17 @@ img {
   gap: 24px;
 }
 /* ------------------------------team-secrion------------------------------ */
-.team-secrion {
+.team-section {
   background-color: var(--cloud);
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 .team-title {
   text-align: center;
   color: var(--navy-blue);
-  padding-top: 120px;
-  padding-bottom: 72px;
+  /* padding-top: 120px; */
+  /* padding-bottom: 72px; */
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
@@ -248,9 +258,9 @@ img {
 .team-list-item {
   background-color: var(--white);
   height: 380px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 32px; */
 
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -258,35 +268,52 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .title-text-container {
-  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* display: flex;
   flex-direction: column;
   gap: 8px;
+	замість просто марджина я робив це через діспей флекс */
 }
 .team-list-title {
   color: var(--navy-blue);
   text-align: center;
+  margin: 8px;
 }
 .team-list-text {
   text-align: center;
 }
 /* ------------------------------footer------------------------------ */
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+.footer {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.footer-container a {
+  display: inline-block;
+  margin-bottom: 16px;
+
+  /* display: flex;
+  flex-direction: column;
+  gap: 18px; */
+  /* padding-top: 100px;
+  padding-bottom: 100px; 
+	Як я розумію я отримав той самий результат що і на макеті, 
+	але якість коду від цього гірша */
 }
 
 /* ==============================portfolio.html============================== */
 
 /* -------------------------------nav-section------------------------------- */
+.all-products-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .all-products-nav {
   display: flex;
   justify-content: center;
-  padding-top: 96px;
+  /* padding-top: 96px; */
   gap: 24px;
+  margin-bottom: 72px;
 }
 .product-nav-button {
   background-color: var(--light);
@@ -301,35 +328,43 @@ img {
 .product-nav-button:focus {
   background-color: var(--ocean);
   color: var(--white);
+  border: 1px solid transparent;
 }
 /* ------------------------------example-section------------------------------ */
 .example-product-list {
-  padding-top: 72px;
+  /* padding-top: 72px; */
   display: flex;
   flex-wrap: wrap;
-  gap: 22px;
-  padding-bottom: 120px;
+  column-gap: 24px;
+  row-gap: 48px;
+  /* padding-bottom: 120px; */
 }
 .product-list-item {
-  height: 420px;
-  border: 1px solid var(--cornflower);
-  background-color: var(--white);
-  margin-bottom: 24px;
+  max-height: 420px;
+
+  /* margin-bottom: 24px; */
+}
+.f-li {
+  width: calc((100% - 48px) / 3);
 }
 
 .title-text-container-portfolio {
-  display: flex;
+  border: 1px solid var(--cornflower);
+  background-color: var(--white);
+  padding: 32px 16px;
+  /* display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 0 16px 0 16px;
+  padding: 0 16px 0 16px; */
 }
 .product-list-link {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 32px; */
 }
 .product-list-title {
   color: var(--navy-blue);
+  margin-bottom: 8px;
 }
 .product-list-text {
   color: var(--slate);
