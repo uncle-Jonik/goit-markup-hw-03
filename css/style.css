@@ -109,6 +109,8 @@ img {
   text-transform: uppercase;
   color: var(--iris);
   margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo-light {
   color: var(--cloud);
@@ -137,25 +139,16 @@ img {
 .header-container {
   display: flex;
   justify-content: space-between;
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
 }
 .header-nav {
   align-items: center;
   display: flex;
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
 }
 .header-nav-list {
   display: flex;
   gap: 40px;
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
 }
-/* .product-list-link {
-  padding-top: 24px;
-  padding-bottom: 24px;
-} */
+
 .nav-list-content {
   color: var(--navy-blue);
   font-weight: 500;
@@ -175,12 +168,12 @@ img {
 .header-address-list {
   display: flex;
   gap: 40px;
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
 }
 .address-list-content {
   font-weight: 400;
   color: var(--slate);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .address-list-content:hover,
 .address-list-content:focus {
@@ -197,7 +190,7 @@ img {
   max-width: 496px;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 .herro-button {
   display: block;
@@ -224,12 +217,6 @@ img {
   display: flex;
   gap: 24px;
 }
-/* .benefits-list-item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;  
-	спочатку робив так замість того щоб просто написати марджин
-} */
 .benefits-list-title {
   color: var(--navy-blue);
   margin-bottom: 8px;
@@ -259,8 +246,6 @@ img {
 .team-title {
   text-align: center;
   color: var(--navy-blue);
-  /* padding-top: 120px; */
-  /* padding-bottom: 72px; */
   margin-bottom: 72px;
 }
 .team-list {
@@ -270,9 +255,6 @@ img {
 .team-list-item {
   background-color: var(--white);
   height: 380px;
-  /* display: flex;
-  flex-direction: column;
-  gap: 32px; */
 
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -282,15 +264,11 @@ img {
 .title-text-container {
   padding-top: 32px;
   padding-bottom: 32px;
-  /* display: flex;
-  flex-direction: column;
-  gap: 8px;
-	замість просто марджина я робив це через діспей флекс */
 }
 .team-list-title {
   color: var(--navy-blue);
   text-align: center;
-  margin: 8px;
+  margin-bottom: 8px;
 }
 .team-list-text {
   text-align: center;
@@ -303,14 +281,6 @@ img {
 .footer-container a {
   display: inline-block;
   margin-bottom: 16px;
-
-  /* display: flex;
-  flex-direction: column;
-  gap: 18px; */
-  /* padding-top: 100px;
-  padding-bottom: 100px; 
-	Як я розумію я отримав той самий результат що і на макеті, 
-	але якість коду від цього гірша */
 }
 
 /* ==============================portfolio.html============================== */
@@ -323,12 +293,11 @@ img {
 .all-products-nav {
   display: flex;
   justify-content: center;
-  /* padding-top: 96px; */
   gap: 24px;
   margin-bottom: 72px;
 }
 .product-nav-button {
-  background-color: var(--light);
+  background-color: var(--cloud);
   color: var(--iris);
   cursor: pointer;
   padding: 12px 24px;
@@ -344,17 +313,13 @@ img {
 }
 /* ------------------------------example-section------------------------------ */
 .example-product-list {
-  /* padding-top: 72px; */
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  /* padding-bottom: 120px; */
 }
 .product-list-item {
   max-height: 420px;
-
-  /* margin-bottom: 24px; */
 }
 .f-li {
   width: calc((100% - 48px) / 3);
@@ -365,16 +330,7 @@ img {
   background-color: var(--white);
   padding: 32px 16px;
   border-top: none;
-  /* display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 0 16px 0 16px; */
 }
-/* .product-list-link {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-} */
 .product-list-title {
   color: var(--navy-blue);
   margin-bottom: 8px;
