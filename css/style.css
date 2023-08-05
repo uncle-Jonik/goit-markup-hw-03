@@ -109,8 +109,6 @@ img {
   text-transform: uppercase;
   color: var(--iris);
   margin-right: 76px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .logo-light {
   color: var(--cloud);
@@ -281,6 +279,7 @@ img {
 .footer-container a {
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 0;
 }
 
 /* ==============================portfolio.html============================== */
